@@ -13,6 +13,8 @@ The user(s) are able to type commands into the terminal window because of the sh
 ```
 ls
 ```
+This command outputs to the console the contents of a directory you specify.  If none is given, then it will list the contents of the current working directory. 
+
 *Output:*
 ```
 dir1        dir2         dir3
@@ -21,6 +23,8 @@ dir1        dir2         dir3
 ```
 ls -lrtha 
 ```
+I recommend using ```ll```, which is an alias for long-formatted listing
+
 *Output:*
 ```
 total 16K
@@ -36,17 +40,23 @@ drwxrwxrwx 5 root     root     4.0K Jun 26 12:11 .
 ```
 cd dir1
 ```
+This command moves your current working directory to the location you provide it.  This can be either a relative path (extend from current directory) or an absolute path (extend from root).
 
 ```~``` - go to home directory
 
-```-``` - return to previous working directory (undo)
-
 ```..``` - change to parent directory
+
+```-``` - return to previous working directory (undo)
 
 ```!$``` - reuse previous parameter
 
+### Move/Rename Stuff
+
 ### Useful Commands
 - grep
+-   v = non-matching files
+-   i = ignore case
+-   r = recursive
 - piping
 - find
 - htop
