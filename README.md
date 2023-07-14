@@ -86,9 +86,29 @@ A pipe is used to streamline the output of one command and redirect it as the in
  Using a pipe is often useful when trying to search for an expression when you have *some* idea of the scope/pool that you're searching amongst.  
 
 In the example, we are searching for an expression within the pool of previous commands.
-- find
-- htop
-- 
+
+### Searching for a File
+*Input:*
+```
+find LOCATION BY_CRITERIA
+(e.g., find ./ -name "TEXTFILE")
+```
+
+The find command is used to search for content based on a variety of criteria the user wants to look/query by.  This can be by the name, size, time, et cetera.  Unlike grep, this command looks at the data surrounding the content rather than the content itself.  It is most commonly used to find the locations of files which you know the name of but fail to locate.  
+
+```-name``` - search by name
+
+```-size``` - search by size
+
+```-newer``` - search by files newer than one provided
+
+### Viewing System Resources
+*Input:*
+```
+htop
+```
+
+This command will bring up dynamic shell screen that displays active resource consumption and usage.  It visualizes things like processor usage, who is on your VM, what command they're using, thread and memory usage, 
 ![image](https://github.com/RocketSandwich/Brown-Bag-CLI/assets/93087022/d9c3ae27-32ea-4b4b-938b-92d50f36647f)
 
 
