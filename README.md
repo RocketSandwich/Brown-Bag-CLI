@@ -17,11 +17,11 @@ This command outputs to the console the contents of a directory you specify.  If
 
 *Output:*
 ```
-dir1        dir2         dir3
+DIR1        DIR2         DIR3
 ```
 *Options:*
 ```
-ls -lrtha 
+ls -ltha 
 ```
 I recommend using ```ll```, which is an alias for long-formatted listing
 
@@ -38,9 +38,9 @@ drwxrwxrwx 5 root     root     4.0K Jun 26 12:11 .
 ### Change Working Directory
 *Input:*
 ```
-cd dir1
+cd DIR1
 ```
-This command moves your current working directory to the location you provide it.  This can be either a relative path (extend from current directory) or an absolute path (extend from root).
+This command changes your current working directory to the location you provide it.  This can be either a relative path (extend from current directory) or an absolute path (extend from root).
 
 ```~``` - go to home directory
 
@@ -51,13 +51,41 @@ This command moves your current working directory to the location you provide it
 ```!$``` - reuse previous parameter
 
 ### Move/Rename Stuff
+*Input:*
+```
+mv SOURCE DEST
+```
+This command can perform multiple functions.  Firstly, it can move the file/directory of SOURCE into the location of DEST.  Secondly, it can be used to rename the SOURCE file to whatever is provided as DEST.
 
-### Useful Commands
-- grep
--   v = non-matching files
--   i = ignore case
--   r = recursive
-- piping
+```-n``` - prevents overwriting existing file
+
+```-b``` - creates backup of DEST file
+
+### More Useful Commands
+### Global Regular Expression Print
+*Input:*
+```
+grep "STRING" LOCATION
+```
+
+The grep command is used to search for matching expressions within a file or across director(ies).  It is useful when trying to find locations of called functions, parent classes, et cetera. within the code itself without knowing which file it is located in.
+
+```-r``` - if the LOCATION of the file is unknown, you can recursively traverse the contents of an entire directory 
+
+```-v``` - this option inverts the results to output non-matching files 
+
+```-i``` - ignores case sensitive expression
+
+#### Piping
+*Input:*
+```
+history | grep "whatever"
+```
+
+A pipe is used to streamline the output of one command and redirect it as the input of another command.  It has many uses, but is this circumstance we can use it to search for an expression that was used as a command. 
+ Using a pipe is often useful when trying to search for an expression when you have *some* idea of the scope/pool that you're searching amongst.  
+
+In the example, we are searching for an expression within the pool of previous commands.
 - find
 - htop
 - 
