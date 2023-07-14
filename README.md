@@ -108,9 +108,23 @@ The find command is used to search for content based on a variety of criteria th
 htop
 ```
 
-This command will bring up dynamic shell screen that displays active resource consumption and usage.  It visualizes things like processor usage, who is on your VM, what command they're using, thread and memory usage, 
+This command will bring up dynamic screen that displays active resource consumption and usage directly in your terminal.  It visualizes things like processor usage, who is on your VM, what command they're using, thread and memory usage, et cetera.
 ![image](https://github.com/RocketSandwich/Brown-Bag-CLI/assets/93087022/d9c3ae27-32ea-4b4b-938b-92d50f36647f)
 
 
 ### Weird Commands
+### Continouus Affirmative Response
+*Input:*
+```
+yes
+```
 
+This command will indefinitely output a given response (default 'yes'), to the console with the only option to quit being ctrl^c.  Surprisingly, some people use this with piping to run some scripts overnight or away from the computer which require user response or prompting.  
+
+### Reversal
+*Input:*
+```
+rev TEXTFILE.txt
+```
+
+This command inverts all text within the file.
