@@ -113,6 +113,19 @@ This command will bring up dynamic screen that displays active resource consumpt
 
 
 ### Weird Commands
+### Reversal
+*Input:*
+```
+rev TEXTFILE.txt
+```
+
+This command inverts all text within the file.
+
+*Output:*
+```
+desrever si txet siht
+```
+
 ### Continouus Affirmative Response
 *Input:*
 ```
@@ -121,10 +134,48 @@ yes
 
 This command will indefinitely output a given response (default 'yes'), to the console with the only option to quit being ctrl^c.  Surprisingly, some people use this with piping to run some scripts overnight or away from the computer which require user response or prompting.  
 
-### Reversal
-*Input:*
+*Output:*
 ```
-rev TEXTFILE.txt
+yesdesrever si txet siht
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+yes
+ctrl^c
 ```
-
-This command inverts all text within the file.
