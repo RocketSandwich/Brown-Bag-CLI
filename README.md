@@ -136,7 +136,6 @@ This command will indefinitely output a given response (default 'yes'), to the c
 
 *Output:*
 ```
-yesdesrever si txet siht
 yes
 yes
 yes
